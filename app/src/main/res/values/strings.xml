@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">RodrimaqClientes</string>
+
+    <string name="rodrimaq">RodriMAQ</string>
+    <string name="cadastroPessoaFisica">Cadastro Pessoa Física</string>
+    <string name="cadastroCompraVenda">Cadastro Compra/Venda</string>
+
+    <string name="nome">Nome:</string>
+    <string name="codCliente">Cod. Cliente:</string>
+    <string name="filiacao">Filiação:</string>
+    <string name="cpf">CPF:</string>
+    <string name="rg">RG:</string>
+    <string name="nasc">Data Nasc.:</string>
+    <string name="celular">Cel.:</string>
+    <string name="foneFixo">Fixo:</string>
+    <string name="email">Email:</string>
+
+    <!--    <string name="estCiv">Est. Civil:</string>-->
+    <!--    <string name="conj">Conjuge:</string>-->
+    <!--    <string name="cpfConj">CPF:</string>-->
+    <!--    <string name="rgConj">RG:</string>-->
+    <!--    <string name="nascConj">Data Nasc.:</string>-->
+
+    <string name="endResTitle">Endereço Residencial</string>
+    <string name="endRes">End. Res.:</string>
+    <string name="numeroRes">Número:</string>
+    <string name="bairroRes">Bairro:</string>
+    <string name="cidadeRes">Cidade:</string>
+    <string name="ufRes">UF:</string>
+    <string name="cepRes">CEP:</string>
+
+    <string name="endComTitle">Endereço Comercial</string>
+    <string name="endCom">End. Com.:</string>
+    <string name="numeroCom">Número:</string>
+    <string name="bairroCom">Bairro:</string>
+    <string name="cidadeCom">Cidade:</string>
+    <string name="ufCom">UF:</string>
+    <string name="cepCom">CEP:</string>
+
+    <string name="endCor">Endereço Correspondência:</string>
+
+    <!--    <string name="patrimonioTitle">Patrimônio - Bens Imóveis</string>-->
+    <!--    <string name="urbanosTitle">Terrenos Urbanos</string>-->
+    <!--    <string name="constUrbTitle">Construções Urbanas</string>-->
+    <!--    <string name="terraPropTitle">Terra Própria</string>-->
+    <!--    <string name="areaArrTitle">Área Arrendada</string>-->
+
+
+    <!--    <string name="quantidade">Quant:</string>-->
+    <!--    <string name="areaTotal">Área Total:</string>-->
+    <!--    <string name="escrituras">Quant. Esc.:</string>-->
+    <!--    <string name="areaArr">Área Arr.:</string>-->
+    <!--    <string name="vencContrato">Venc. Contrato:</string>-->
+    <!--    <string name="custoArr">Custo Arr.:</string>-->
+    <!--    <string name="hectares">ha</string>-->
+    <!--    <string name="metrosQ">m²</string>-->
+
+    <string name="venda">Venda</string>
+    <string name="compra">Compra</string>
+    <string name="tipoVeiculo">Tipo Veículo:</string>
+    <string name="modeloVeiculo">Modelo:</string>
+    <string name="marcaVeiculo">Marca:</string>
+    <string name="anoVeiculo">Ano:</string>
+    <string name="valorVeiculo">Valor:</string>
+
+    <string name="real">R$</string>
+
+
+
+</resources>
