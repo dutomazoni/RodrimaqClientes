@@ -321,39 +321,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="@string/numeroRes"
-            android:textSize="25dp"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/ET_numRes"
-            android:inputType="number"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:text="@string/bairroRes"
-            android:textSize="25dp"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/ET_bairroRes"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cidadeRes"
@@ -373,33 +340,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:text="@string/ufRes"
-            android:textSize="25dp"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/ET_ufRes"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="240dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cepRes"
             android:textSize="25dp"
             android:layout_weight="1"/>
         <EditText
             android:id="@+id/ET_cepRes"
-            android:inputType="number"
-            android:layout_width="400dp"
+            android:layout_width="500dp"
             android:layout_height="wrap_content"
             android:textSize="25dp"
             android:gravity="start"
             android:layout_weight="1"/>
     </LinearLayout>
+
 
     <TextView
         android:layout_width="match_parent"
@@ -423,40 +377,7 @@
         <EditText
             android:id="@+id/ET_endCom"
             android:layout_width="500dp"
-            android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="@string/numeroCom"
-            android:textSize="25dp"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/ET_numCom"
-            android:inputType="number"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:text="@string/bairroCom"
-            android:textSize="25dp"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/ET_bairroCom"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:textSize="25dp"
             android:gravity="start"
             android:layout_weight="1"/>
@@ -486,72 +407,33 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="260dp"
-            android:layout_height="wrap_content"
-            android:text="@string/ufCom"
-            android:textSize="25dp"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/ET_ufCom"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
-            android:text="@string/cepCom"
-            android:textSize="25dp"
-            android:layout_weight="1"/>
-        <EditText
-            android:id="@+id/ET_cepCom"
-            android:inputType="number"
-            android:layout_width="400dp"
-            android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:gravity="start"
-            android:layout_weight="1"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/endCor"
             android:textSize="25dp"
             android:layout_weight="1"/>
-
     </LinearLayout>
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
         <RadioGroup
             android:id="@+id/endCorr_question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-
             <RadioButton
                 android:id="@+id/radioBt_res"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="Residencial"/>
-
             <RadioButton
                 android:id="@+id/radioBt_com"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Comercial"/>
         </RadioGroup>
-
     </LinearLayout>
 
 <!--    <TextView-->
@@ -785,6 +667,5 @@
 <!--            android:gravity="start"-->
 <!--            android:layout_weight="1"/>-->
 <!--    </LinearLayout>-->
-
 
 </LinearLayout>

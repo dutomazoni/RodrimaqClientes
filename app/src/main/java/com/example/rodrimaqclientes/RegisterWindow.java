@@ -20,11 +20,10 @@ public class RegisterWindow extends AppCompatActivity {
 
     EditText Nome , CodCliente , Filiacao , Cpf , Rg , Nasc , Celular , Fixo , Email;
     //EditText EstCivil, ConjNome , ConjCpf , ConjRg , ConjNasc;
-    EditText EndRes, NumRes , BairroRes , CidadeRes, UfRes , CepRes;
-    EditText EndCom, NumCom , BairroCom , CidadeCom, UfCom , CepCom;
+    EditText EndRes, CidadeRes, CepRes;
+    EditText EndCom, CidadeCom;
     RadioGroup EndCor;
     //EditText UrbQuant, ConstUrbQuant, UrbArea, ConstUrbArea, TerraEsc, TerraArea, ArrendadaArea, ArrendadaContrato, ArrendadaCusto, AreaTotal;
-    EditText Venda, Compra;
     static String curId;
 
 
@@ -50,18 +49,11 @@ public class RegisterWindow extends AppCompatActivity {
         ConjNasc = (EditText) findViewById(R.id.ET_nascConj);*/
 
         EndRes = (EditText) findViewById(R.id.ET_endRes);
-        NumRes = (EditText) findViewById(R.id.ET_numRes);
-        BairroRes = (EditText) findViewById(R.id.ET_bairroRes);
         CidadeRes = (EditText) findViewById(R.id.ET_cidadeRes);
-        UfRes = (EditText) findViewById(R.id.ET_ufRes);
         CepRes = (EditText) findViewById(R.id.ET_cepRes);
 
         EndCom = (EditText) findViewById(R.id.ET_endCom);
-        NumCom = (EditText) findViewById(R.id.ET_numCom);
-        BairroCom = (EditText) findViewById(R.id.ET_bairroCom);
         CidadeCom = (EditText) findViewById(R.id.ET_cidadeCom);
-        UfCom = (EditText) findViewById(R.id.ET_ufCom);
-        CepCom = (EditText) findViewById(R.id.ET_cepCom);
 
         EndCor = (RadioGroup) findViewById(R.id.endCorr_question);
 
@@ -88,18 +80,11 @@ public class RegisterWindow extends AppCompatActivity {
         String email = Email.getText().toString();
 
         String endRes = EndRes.getText().toString();
-        String numRes = NumRes.getText().toString();
-        String bairroRes = BairroRes.getText().toString();
         String cidadeRes = CidadeRes.getText().toString();
-        String ufRes = UfRes.getText().toString();
         String cepRes = CepRes.getText().toString();
 
         String endCom = EndCom.getText().toString();
-        String numCom = NumCom.getText().toString();
-        String bairroCom = BairroCom.getText().toString();
         String cidadeCom = CidadeCom.getText().toString();
-        String ufCom = UfCom.getText().toString();
-        String cepCom = CepCom.getText().toString();
 
         int endCor = EndCor.getCheckedRadioButtonId();
         System.out.println("ENDCOR = ");
@@ -116,10 +101,10 @@ public class RegisterWindow extends AppCompatActivity {
 
         String sql = "INSERT INTO users " +
                 "(nome, codCliente, filiacao, cpf, rg, nasc, celular, fixo, email," +
-                " endRes, numRes, bairroRes, cidadeRes, ufRes, cepRes," +
-                " endCom, numCom, bairroCom, cidadeCom, ufCom, cepCom," +
+                " endRes, cidadeRes, cepRes," +
+                " endCom,cidadeCom," +
                 " endCorr)" +
-                " VALUES (? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ?)";
+                " VALUES (? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ?)";
 
         SQLiteStatement statement = usersDb.compileStatement(sql);
 
@@ -134,20 +119,13 @@ public class RegisterWindow extends AppCompatActivity {
         statement.bindString(9,email);
 
         statement.bindString(10,endRes);
-        statement.bindString(11,numRes);
-        statement.bindString(12,bairroRes);
-        statement.bindString(13,cidadeRes);
-        statement.bindString(14,ufRes);
-        statement.bindString(15,cepRes);
+        statement.bindString(11,cidadeRes);
+        statement.bindString(12,cepRes);
 
-        statement.bindString(16,endCom);
-        statement.bindString(17,numCom);
-        statement.bindString(18,bairroCom);
-        statement.bindString(19,cidadeCom);
-        statement.bindString(20,ufCom);
-        statement.bindString(21,cepCom);
+        statement.bindString(13,endCom);
+        statement.bindString(14,cidadeCom);
 
-        statement.bindString(22,respCorr);
+        statement.bindString(15,respCorr);
 
         statement.execute();
 

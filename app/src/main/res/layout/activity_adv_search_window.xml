@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClientsWindow">
+    tools:context=".AdvSearchWindow">
 
     <include layout="@layout/content_header"/>
-    <include layout="@layout/content_table_clients"/>
-    <include layout="@layout/content_footer_clients" />
+    <include layout="@layout/content_table_adv_search"/>
+    <include layout="@layout/content_footer_search" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,14 +6,12 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class ClientsWindow extends AppCompatActivity {
+public class AdvSearchWindow extends AppCompatActivity {
 
     public static SQLiteDatabase usersDb;
     TextView tableNomes, tableCelulares, tableFixos, tableEmails, tableCodCliente, tableFiliacao, tableCpf, tableRg, tableNasc,
@@ -59,7 +57,7 @@ public class ClientsWindow extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_clients_window);
+        setContentView(R.layout.activity_adv_search_window);
 
         try{
             usersDb = MainActivity.usersDb;

@@ -49,13 +49,13 @@
 
                         <TextView
                             android:text="CPF"
-                            android:layout_width="400px"
+                            android:layout_width="600px"
                             android:layout_height="wrap_content"
                             android:layout_column="1" />
 
                         <TextView
                             android:text="RG"
-                            android:layout_width="400px"
+                            android:layout_width="600px"
                             android:layout_height="wrap_content"
                             android:layout_column="1" />
 
@@ -67,37 +67,25 @@
 
                         <TextView
                             android:text="Celular"
-                            android:layout_width="300px"
+                            android:layout_width="600px"
                             android:layout_height="wrap_content"
                             android:layout_column="1" />
 
                         <TextView
                             android:text="Fixo"
-                            android:layout_width="300px"
+                            android:layout_width="600px"
                             android:layout_height="wrap_content"
                             android:layout_column="1" />
 
                         <TextView
                             android:text="Email"
-                            android:layout_width="300px"
+                            android:layout_width="800px"
                             android:layout_height="wrap_content"
                             android:layout_column="1" />
 
                         <TextView
                             android:text="End. Residencial"
-                            android:layout_width="400px"
-                            android:layout_height="wrap_content"
-                            android:layout_column="1" />
-
-                        <TextView
-                            android:text="Número"
-                            android:layout_width="200px"
-                            android:layout_height="wrap_content"
-                            android:layout_column="1" />
-
-                        <TextView
-                            android:text="Bairro"
-                            android:layout_width="400px"
+                            android:layout_width="800px"
                             android:layout_height="wrap_content"
                             android:layout_column="1" />
 
@@ -108,49 +96,19 @@
                             android:layout_column="1" />
 
                         <TextView
-                            android:text="UF"
-                            android:layout_width="200px"
-                            android:layout_height="wrap_content"
-                            android:layout_column="1" />
-
-                        <TextView
                             android:text="CEP"
-                            android:layout_width="400px"
+                            android:layout_width="500px"
                             android:layout_height="wrap_content"
                             android:layout_column="1" />
 
                         <TextView
-                            android:text="End. Comercial"
-                            android:layout_width="400px"
-                            android:layout_height="wrap_content"
-                            android:layout_column="1" />
-
-                        <TextView
-                            android:text="Número"
-                            android:layout_width="200px"
-                            android:layout_height="wrap_content"
-                            android:layout_column="1" />
-
-                        <TextView
-                            android:text="Bairro"
-                            android:layout_width="400px"
+                            android:text="Ins. Bloco Produtor"
+                            android:layout_width="800px"
                             android:layout_height="wrap_content"
                             android:layout_column="1" />
 
                         <TextView
                             android:text="Cidade"
-                            android:layout_width="400px"
-                            android:layout_height="wrap_content"
-                            android:layout_column="1" />
-
-                        <TextView
-                            android:text="UF"
-                            android:layout_width="200px"
-                            android:layout_height="wrap_content"
-                            android:layout_column="1" />
-
-                        <TextView
-                            android:text="CEP"
                             android:layout_width="400px"
                             android:layout_height="wrap_content"
                             android:layout_column="1" />
@@ -169,19 +127,19 @@
 
                         <TextView
                             android:text="Tipo"
-                            android:layout_width="200px"
+                            android:layout_width="500px"
                             android:layout_height="wrap_content"
                             android:layout_column="1" />
 
                         <TextView
                             android:text="Modelo"
-                            android:layout_width="200px"
+                            android:layout_width="500px"
                             android:layout_height="wrap_content"
                             android:layout_column="1" />
 
                         <TextView
                             android:text="Marca"
-                            android:layout_width="200px"
+                            android:layout_width="400px"
                             android:layout_height="wrap_content"
                             android:layout_column="1" />
 
@@ -193,7 +151,7 @@
 
                         <TextView
                             android:text="Valor"
-                            android:layout_width="200px"
+                            android:layout_width="250px"
                             android:layout_height="wrap_content"
                             android:layout_column="1" />
 
@@ -229,13 +187,13 @@
 
                     <TextView
                         android:id="@+id/ET_tableCpf"
-                        android:layout_width="400px"
+                        android:layout_width="600px"
                         android:layout_height="wrap_content"
                         android:layout_column="1" />
 
                     <TextView
                         android:id="@+id/ET_tableRg"
-                        android:layout_width="400px"
+                        android:layout_width="600px"
                         android:layout_height="wrap_content"
                         android:layout_column="1" />
 
@@ -247,37 +205,25 @@
 
                     <TextView
                         android:id="@+id/ET_tableCel"
-                        android:layout_width="300px"
+                        android:layout_width="600px"
                         android:layout_height="wrap_content"
                         android:layout_column="1" />
 
                     <TextView
                         android:id="@+id/ET_tableFixo"
-                        android:layout_width="300px"
+                        android:layout_width="600px"
                         android:layout_height="wrap_content"
                         android:layout_column="1" />
 
                     <TextView
                         android:id="@+id/ET_tableEmail"
-                        android:layout_width="300px"
+                        android:layout_width="800px"
                         android:layout_height="wrap_content"
                         android:layout_column="1" />
 
                     <TextView
                         android:id="@+id/ET_tableEndRes"
-                        android:layout_width="400px"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1" />
-
-                    <TextView
-                        android:id="@+id/ET_tableNumRes"
-                        android:layout_width="200px"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1" />
-
-                    <TextView
-                        android:id="@+id/ET_tableBairroRes"
-                        android:layout_width="400px"
+                        android:layout_width="800px"
                         android:layout_height="wrap_content"
                         android:layout_column="1" />
 
@@ -288,49 +234,19 @@
                         android:layout_column="1" />
 
                     <TextView
-                        android:id="@+id/ET_tableUfRes"
-                        android:layout_width="200px"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1" />
-
-                    <TextView
                         android:id="@+id/ET_tableCepRes"
-                        android:layout_width="400px"
+                        android:layout_width="500px"
                         android:layout_height="wrap_content"
                         android:layout_column="1" />
 
                     <TextView
                         android:id="@+id/ET_tableEndCom"
-                        android:layout_width="400px"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1" />
-
-                    <TextView
-                        android:id="@+id/ET_tableNumCom"
-                        android:layout_width="200px"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1" />
-
-                    <TextView
-                        android:id="@+id/ET_tableBairroCom"
-                        android:layout_width="400px"
+                        android:layout_width="800px"
                         android:layout_height="wrap_content"
                         android:layout_column="1" />
 
                     <TextView
                         android:id="@+id/ET_tableCidadeCom"
-                        android:layout_width="400px"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1" />
-
-                    <TextView
-                        android:id="@+id/ET_tableUfCom"
-                        android:layout_width="200px"
-                        android:layout_height="wrap_content"
-                        android:layout_column="1" />
-
-                    <TextView
-                        android:id="@+id/ET_tableCepCom"
                         android:layout_width="400px"
                         android:layout_height="wrap_content"
                         android:layout_column="1" />
@@ -349,19 +265,19 @@
 
                     <TextView
                         android:id="@+id/ET_tableTipoVeiculo"
-                        android:layout_width="200px"
+                        android:layout_width="500px"
                         android:layout_height="wrap_content"
                         android:layout_column="1" />
 
                     <TextView
                         android:id="@+id/ET_tableModeloVeiculo"
-                        android:layout_width="200px"
+                        android:layout_width="500px"
                         android:layout_height="wrap_content"
                         android:layout_column="1" />
 
                     <TextView
                         android:id="@+id/ET_tableMarcaVeiculo"
-                        android:layout_width="200px"
+                        android:layout_width="400px"
                         android:layout_height="wrap_content"
                         android:layout_column="1" />
 
@@ -373,7 +289,7 @@
 
                     <TextView
                         android:id="@+id/ET_tableValor"
-                        android:layout_width="200px"
+                        android:layout_width="250px"
                         android:layout_height="wrap_content"
                         android:layout_column="1" />
 
