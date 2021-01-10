@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:text="Clientes cadastrados:"
+                android:fontFamily="@font/ralewayheavy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textAlignment="gravity"
+                android:layout_column="0" />
+
+        </TableRow>
+
+        <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:text="Nome"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Cod. Cliente"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Filiação"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="CPF"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="RG"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Data Nascimento"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Celular"
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Fixo"
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Email"
+                            android:layout_width="300px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="End. Residencial"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Número"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Bairro"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Cidade"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="UF"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="CEP"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="End. Comercial"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Número"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Bairro"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Cidade"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="UF"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="CEP"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="End. Correspondência"
+                            android:layout_width="400px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Venda ou Compra"
+                            android:layout_width="500px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Tipo"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Modelo"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Marca"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Ano"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:text="Valor"
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1" />
+
+                </LinearLayout>
+
+
+        </TableRow>
+
+        <TableRow>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ET_tableNome"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableCodCliente"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableFiliacao"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableCpf"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableRg"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableNasc"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableCel"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableFixo"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableEmail"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableEndRes"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableNumRes"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableBairroRes"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableCidadeRes"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableUfRes"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableCepRes"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableEndCom"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableNumCom"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableBairroCom"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableCidadeCom"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableUfCom"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableCepCom"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableEndCor"
+                        android:layout_width="400px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableVendaOuCompra"
+                        android:layout_width="500px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableTipoVeiculo"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableModeloVeiculo"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableMarcaVeiculo"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableAnoVeiculo"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                    <TextView
+                        android:id="@+id/ET_tableValor"
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1" />
+
+                </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+</HorizontalScrollView>

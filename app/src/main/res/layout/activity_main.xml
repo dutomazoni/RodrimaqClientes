@@ -8,6 +8,20 @@
     tools:context=".MainActivity">
 
 
+    <Button
+        android:id="@+id/bt_showAll"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="476dp"
+        android:fontFamily="@font/ralewayheavy"
+        android:onClick="ShowAll"
+        android:text="Ver todos os clientes"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Bt_register"
@@ -15,9 +29,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="188dp"
         android:layout_marginTop="320dp"
+        android:fontFamily="@font/ralewayheavy"
         android:onClick="RegisterClient"
         android:text="Cadastrar novo cliente"
-        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/Bt_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -30,11 +45,13 @@
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
-        android:layout_marginTop="496dp"
+        android:layout_marginTop="396dp"
+        android:fontFamily="@font/ralewayheavy"
         android:onClick="SearchClient"
         android:text="Buscar cliente"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.992"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,7 +61,7 @@
         android:layout_height="57dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="4dp"
-        android:fontFamily="monospace"
+        android:fontFamily="@font/ralewayheavy"
         android:text="RodriMAQ"
         android:textAlignment="center"
         android:textSize="40sp"
@@ -52,5 +69,16 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="234dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rodrimaq_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

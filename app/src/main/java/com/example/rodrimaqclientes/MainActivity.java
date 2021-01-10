@@ -40,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void ShowAll (View view){
+        Intent intent = new Intent( this, ClientsWindow.class);
+        startActivity(intent);
+    }
+
     public void ClearDb()
     {
         usersDb.delete("users" ,null,null);

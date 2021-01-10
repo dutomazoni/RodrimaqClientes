@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/cadastroPessoaFisica"
+        android:fontFamily="@font/ralewayheavy"
         android:textSize="30dp"
         android:gravity="left"
         android:layout_marginBottom="10dp"/>
@@ -291,6 +292,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/endResTitle"
+        android:fontFamily="@font/ralewayheavy"
         android:textSize="30dp"
         android:gravity="left"
         android:layout_marginBottom="10dp"/>
@@ -403,6 +405,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/endComTitle"
+        android:fontFamily="@font/ralewayheavy"
         android:textSize="30dp"
         android:gravity="left"
         android:layout_marginBottom="10dp"/>

@@ -2,6 +2,7 @@ package com.example.rodrimaqclientes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
@@ -20,11 +21,22 @@ import java.util.ArrayList;
 public class SearchWindow extends AppCompatActivity {
 
     EditText nomeBusca;
-    LinearLayout table;
     public static SQLiteDatabase usersDb;
 
+    TextView tableNomes, tableCelulares, tableFixos, tableEmails, tableVendasCompras, tableTiposVeiculos, tableModelosVeiculos, tableMarcasVeiculos, tableAnosVeiculos, tableValoresVeiculos;
 
-    ArrayList<String> datalist = new ArrayList<>();
+
+    ArrayList<String> nomes = new ArrayList<>();
+    ArrayList<String> celulares = new ArrayList<>();
+    ArrayList<String> fixos = new ArrayList<>();
+    ArrayList<String> emails = new ArrayList<>();
+    ArrayList<String> vendasCompras = new ArrayList<>();
+    ArrayList<String> tiposVeiculo = new ArrayList<>();
+    ArrayList<String> modelosVeiculo = new ArrayList<>();
+    ArrayList<String> marcasVeiculo = new ArrayList<>();
+    ArrayList<String> anosVeiculo = new ArrayList<>();
+    ArrayList<String> valoresVeiculo = new ArrayList<>();
+
 
 
     @Override
@@ -37,9 +49,18 @@ public class SearchWindow extends AppCompatActivity {
         }catch (Exception e){
             e.printStackTrace();
         }
-        table = (LinearLayout) findViewById(R.id.table_layout);
-        nomeBusca = (EditText) findViewById(R.id.ET_buscaCliente);
 
+        nomeBusca = (EditText) findViewById(R.id.ET_buscaCliente);
+        tableNomes = (TextView) findViewById(R.id.ET_tableNome);
+        tableCelulares = (TextView) findViewById(R.id.ET_tableCel);
+        tableFixos = (TextView) findViewById(R.id.ET_tableFixo);
+        tableEmails = (TextView) findViewById(R.id.ET_tableEmail);
+        tableVendasCompras = (TextView) findViewById(R.id.ET_tableVendaOuCompra);
+        tableTiposVeiculos = (TextView) findViewById(R.id.ET_tableTipoVeiculo);
+        tableModelosVeiculos = (TextView) findViewById(R.id.ET_tableModeloVeiculo);
+        tableMarcasVeiculos = (TextView) findViewById(R.id.ET_tableMarcaVeiculo);
+        tableAnosVeiculos = (TextView) findViewById(R.id.ET_tableAnoVeiculo);
+        tableValoresVeiculos = (TextView) findViewById(R.id.ET_tableValor);
 
     }
 
@@ -62,7 +83,7 @@ public class SearchWindow extends AppCompatActivity {
                     "valorVeiculo" +
                     " FROM " +
                     " users " +
-                    " JOIN itens WHERE users.id = userID AND nome= '" + nomebuscar +"'";
+                    " JOIN itens WHERE users.id = userID AND nome LIKE '" + nomebuscar +"'";
 
 
         try{
@@ -70,7 +91,7 @@ public class SearchWindow extends AppCompatActivity {
 
             int nomeIndex = c.getColumnIndex("nome");
             int celularIndex = c.getColumnIndex("celular");
-
+            int fixoIndex = c.getColumnIndex("fixo");
             int emailIndex = c.getColumnIndex("email");
             int vendaOuCompraIndex = c.getColumnIndex("vendaOuCompra");
             int tipoVeiculoIndex = c.getColumnIndex("tipoVeiculo");
@@ -79,85 +100,93 @@ public class SearchWindow extends AppCompatActivity {
             int anoVeiculoIndex = c.getColumnIndex("anoVeiculo");
             int valorVeiculoIndex = c.getColumnIndex("valorVeiculo");
 
-
             if (c.moveToFirst()){
+
+                nomes.clear();
+                celulares.clear();
+                fixos.clear();
+                emails.clear();
+                vendasCompras.clear();
+                tiposVeiculo.clear();
+                modelosVeiculo.clear();
+                marcasVeiculo.clear();
+                anosVeiculo.clear();
+                valoresVeiculo.clear();
+
+
                 do {
-                    Log.i("Results - nome", c.getString(nomeIndex));
-                    datalist.add(c.getString(nomeIndex));
+                    //Log.i("Results - nome", c.getString(nomeIndex));
+                    nomes.add(c.getString(nomeIndex));
 
-                    Log.i("Results - cel", c.getString(celularIndex));
-                    datalist.add(c.getString(celularIndex));
+                    //Log.i("Results - cel", c.getString(celularIndex));
+                    celulares.add(c.getString(celularIndex));
 
+                    //Log.i("Results - fixos", c.getString(fixoIndex));
+                    fixos.add(c.getString(fixoIndex));
 
+                    //Log.i("Results - email", c.getString(emailIndex));
+                    emails.add(c.getString(emailIndex));
 
-                    Log.i("Results - email", c.getString(emailIndex));
-                    datalist.add(c.getString(emailIndex));
+                    //Log.i("Results - venda ou compra", c.getString(vendaOuCompraIndex));
+                    vendasCompras.add(c.getString(vendaOuCompraIndex));
 
-                    Log.i("Results - venda ou compra", c.getString(vendaOuCompraIndex));
-                    datalist.add(c.getString(vendaOuCompraIndex));
+                    //Log.i("Results - tipo", c.getString(tipoVeiculoIndex));
+                    tiposVeiculo.add(c.getString(tipoVeiculoIndex));
 
-                    Log.i("Results - tipo", c.getString(tipoVeiculoIndex));
-                    datalist.add(c.getString(tipoVeiculoIndex));
+                    //Log.i("Results - modelo", c.getString(modeloVeiculoIndex));
+                    modelosVeiculo.add(c.getString(modeloVeiculoIndex));
 
-                    Log.i("Results - modelo", c.getString(modeloVeiculoIndex));
-                    datalist.add(c.getString(modeloVeiculoIndex));
+                    //Log.i("Results - marca", c.getString(marcaVeiculoIndex));
+                    marcasVeiculo.add(c.getString(marcaVeiculoIndex));
 
-                    Log.i("Results - marca", c.getString(marcaVeiculoIndex));
-                    datalist.add(c.getString(marcaVeiculoIndex));
+                    //Log.i("Results - ano", c.getString(anoVeiculoIndex));
+                    anosVeiculo.add(c.getString(anoVeiculoIndex));
 
-                    Log.i("Results - ano", c.getString(anoVeiculoIndex));
-                    datalist.add(c.getString(anoVeiculoIndex));
-
-                    Log.i("Results - valor", c.getString(valorVeiculoIndex));
-                    datalist.add(c.getString(valorVeiculoIndex));
-
-
+                    //Log.i("Results - valor", c.getString(valorVeiculoIndex));
+                    valoresVeiculo.add(c.getString(valorVeiculoIndex));
 
                 }while (c.moveToNext());
 
             }
-            createTitle(table);
-            for(int i = 0; i<datalist.size(); i++)
-            {
-                createTable(table,i);
-            }
+            nomebuscar = "";
         }catch( Exception e){
             e.printStackTrace();
         }
 
-    }
-
-    void createTitle(LinearLayout main){
-        LinearLayout row = new LinearLayout(this);
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0, 7);
-        row.setLayoutParams(params);
-        row.setOrientation(LinearLayout.HORIZONTAL);
-        row.setWeightSum(100);
-
-        // your table title here
-
-        String[] title={"Nome","Cel","Email","Venda ou Compra","Tipo Veículo","Modelo Veículo","Marca Veículo","Ano Veículo", "Valor Veículo"};
-
-
-        for (int i = 0; i < 9; i++) {
-            LinearLayout.LayoutParams textparam;
-            //if(i == 2){
-            //    textparam = new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, (float) 20.285);
-            //}else{
-            textparam = new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, (float) 13.285);
-            //}
-            TextView col1 = new TextView(this);
-            col1.setText(title[i]);
-            col1.setTextSize(13);
-            col1.setPadding(0,0,0,0);
-            col1.setLayoutParams(textparam);
-
-            row.addView(col1);
+        for(int i = 0; i < nomes.size(); i++)
+        {
+            tableNomes.setText(tableNomes.getText() + nomes.get(i) + "\n");
+            tableCelulares.setText(tableCelulares.getText() + celulares.get(i) + "\n");
+            tableFixos.setText(tableFixos.getText() + fixos.get(i) + "\n");
+            tableEmails.setText(tableEmails.getText() + emails.get(i) + "\n");
+            tableVendasCompras.setText(tableVendasCompras.getText() + vendasCompras.get(i) + "\n");
+            tableTiposVeiculos.setText(tableTiposVeiculos.getText() + tiposVeiculo.get(i) + "\n");
+            tableModelosVeiculos.setText(tableModelosVeiculos.getText() + modelosVeiculo.get(i) + "\n");
+            tableMarcasVeiculos.setText(tableMarcasVeiculos.getText() + marcasVeiculo.get(i) + "\n");
+            tableAnosVeiculos.setText(tableAnosVeiculos.getText() + anosVeiculo.get(i) + "\n");
+            tableValoresVeiculos.setText(tableValoresVeiculos.getText() + valoresVeiculo.get(i) + "\n");
         }
-        main.addView(row);
-    }
-
-    void createTable(LinearLayout main,int pos) {
 
     }
+
+    public void cleanSearches (View view)
+    {
+            tableNomes.setText("");
+            tableCelulares.setText("");
+            tableFixos.setText("");
+            tableEmails.setText("");
+            tableVendasCompras.setText("");
+            tableTiposVeiculos.setText("");
+            tableModelosVeiculos.setText("");
+            tableMarcasVeiculos.setText("");
+            tableAnosVeiculos.setText("");
+            tableValoresVeiculos.setText("");
+    }
+
+    public void startScreen(View view)
+    {
+        Intent intent = new Intent( this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }

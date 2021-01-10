@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RodrimaqClientes">
-        <activity android:name=".BuySellWindow"></activity>
+        <activity android:name=".ClientsWindow"></activity>
+        <activity android:name=".BuySellWindow" />
         <activity android:name=".SearchWindow" />
         <activity android:name=".RegisterWindow" />
         <activity android:name=".MainActivity">

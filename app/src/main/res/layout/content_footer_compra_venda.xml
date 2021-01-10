@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:onClick="StartScreen"
         android:text="Finalizar Cadastro"
+        android:fontFamily="@font/ralewayheavy"
         android:textSize="25dp"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

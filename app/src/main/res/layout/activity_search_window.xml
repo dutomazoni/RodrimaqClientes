@@ -16,11 +16,8 @@
         <include layout="@layout/content_buscacliente"/>
 
         <include
-            layout="@layout/content_table"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-
+            layout="@layout/content_footer_search"
+            android:onClick="startScreen" />
 
     </LinearLayout>
 
